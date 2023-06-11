@@ -1,3 +1,4 @@
+import { Analytics } from '@vercel/analytics/react'
 import { useState } from 'react'
 import Head from 'next/head'
 import { SessionProvider } from 'next-auth/react'
@@ -38,6 +39,8 @@ const App = ({ Component, pageProps: { session, ...pageProps } }) => {
                     </Hydrate>
                 </QueryClientProvider>
             </SessionProvider>
+
+            <Analytics />
         </>
     )
 }
