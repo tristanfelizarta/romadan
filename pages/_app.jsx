@@ -11,7 +11,6 @@ import AppProvider from 'components/app'
 
 const App = ({ Component, pageProps: { session, ...pageProps } }) => {
     const [queryClient] = useState(() => new QueryClient())
-    const layout = Component.layout || ((page) => page)
 
     return (
         <>
@@ -34,7 +33,7 @@ const App = ({ Component, pageProps: { session, ...pageProps } }) => {
                             active={true}
                             authentication={Component.authentication}
                         >
-                            {layout(<Component {...pageProps} />)}
+                            <Component {...pageProps} />
                         </AppProvider>
                     </Hydrate>
                 </QueryClientProvider>
