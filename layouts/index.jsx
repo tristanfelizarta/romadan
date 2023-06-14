@@ -1,8 +1,7 @@
 import { useState, useEffect } from 'react'
 import { useRouter } from 'next/router'
 import { useSession } from 'next-auth/react'
-import { chakra, Flex, Spinner, useDisclosure } from '@chakra-ui/react'
-import { Romadan } from 'components/logos'
+import { chakra, Flex, Image, Spinner, useDisclosure } from '@chakra-ui/react'
 import Header from './header'
 import Sidebar from './sidebar'
 import Chats from 'components/chats'
@@ -47,14 +46,15 @@ const AppLayout = (props) => {
                 h="100vh"
                 w="full"
             >
-                <Romadan h={32} w={24} />
+                <Image alt="logo" src="/favicon.ico" h="8" w="8" />
+
                 <Spinner
                     position="absolute"
-                    boxSize={16}
+                    boxSize={12}
                     thickness={2}
                     speed="0.8s"
                     emptyColor="canvas-1"
-                    color="brand.default"
+                    color="accent-1"
                 />
             </Flex>
         )
