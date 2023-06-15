@@ -1,6 +1,6 @@
 import { Schema, model, models } from 'mongoose'
 
-const ChatSchema = Schema(
+const ChatSchema = new Schema(
     {
         user: {
             id: {

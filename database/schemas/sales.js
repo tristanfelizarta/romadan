@@ -1,6 +1,6 @@
 import { Schema, model, models } from 'mongoose'
 
-const SaleSchema = Schema(
+const SaleSchema = new Schema(
     {
         total_sales: {
             type: Number,

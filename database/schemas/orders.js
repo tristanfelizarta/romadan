@@ -1,6 +1,6 @@
 import { Schema, model, models } from 'mongoose'
 
-const OrdersSchema = Schema(
+const OrdersSchema = new Schema(
     {
         user: {
             id: String

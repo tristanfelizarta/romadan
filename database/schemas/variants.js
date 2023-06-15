@@ -1,6 +1,6 @@
 import { Schema, model, models } from 'mongoose'
 
-const VariantsSchema = Schema(
+const VariantsSchema = new Schema(
     {
         product: {
             id: {

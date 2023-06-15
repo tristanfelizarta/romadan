@@ -1,6 +1,6 @@
 import { Schema, model, models } from 'mongoose'
 
-const ProductSchema = Schema(
+const ProductSchema = new Schema(
     {
         image: {
             type: String,
