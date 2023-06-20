@@ -17,7 +17,7 @@ const Statistics = () => {
         () => api.all('/orders')
     )
     const { data: sales, isFetched: isSalesFetched } = useQuery(['sales'], () =>
-        api.get('/sales', '637bba7201c9e559d6d2e174')
+        api.get('/sales', '649122d44728b76ac9f0080c')
     )
 
     return (
