@@ -32,9 +32,7 @@ export const authOptions = {
         })
     ],
     session: {
-        strategy: 'database',
-        maxAge: 30 * 24 * 60 * 60,
-        updateAge: 24 * 60 * 60
+        strategy: 'jwt'
     },
     callbacks: {
         async session({ session, user }) {
